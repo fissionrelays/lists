@@ -8,7 +8,7 @@ $output_dir = dirname(__DIR__) . "/public/tor";
 $last_seen_window = 10800;
 
 // Wait between 2 and almost 10 minutes to start at the top of the hour.
-$sleep = false;
+$sleep = true;
 $sleep_min = 120;
 $sleep_max = 590;
 if ($sleep) sleep(rand($sleep_min, $sleep_max));
